@@ -49,7 +49,7 @@ With it you can:
 
 ```lua
 {
-  "D4F1/tasknvim",
+  "DaFi-1/tasknvim",
   config = function()
     require("tasknvim").setup({
       green    = "#00FF00",
