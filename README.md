@@ -48,19 +48,7 @@ With it you can:
 ### Using [lazy.nvim](https://github.com/folke/lazy.nvim)
 
 ```lua
-{
-  "DaFi-1/tasknvim",
-  config = function()
-    require("tasknvim").setup({
-      green    = "#00FF00",
-      red      = "#FF0000",
-      blue     = "#0000FF",
-      yellow   = "#FFFF00",
-      title_fg = "#000000",
-      title_bg = "#808080",
-    })
-  end,
-}
+{"DaFi-1/tasknvim"}
 ```
 
 ---
