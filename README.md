@@ -3,7 +3,7 @@
 
 A simple and visual Neovim plugin that transforms files into smart task lists, with **automatic counting**, **dynamic highlighting**, and **full color customization**.
 
- 
+  
 ## 🚀 Introduction
   
 **TASKNVIM** was created to simplify task management directly inside Neovim.<br>
