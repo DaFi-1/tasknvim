@@ -5,7 +5,7 @@ A simple and visual Neovim plugin that transforms files into smart task lists, w
 
 
 ## 🚀 Introduction
- 
+  
 **TASKNVIM** was created to simplify task management directly inside Neovim.<br>
 Create a file called **TASKNVIM** and add your tasks.
 
