@@ -1,4 +1,5 @@
 ![plugin logo](./res/logo.png)
+![tasknvim preview](./res/imagetasknvim.webp)
 
 A simple and visual Neovim plugin that transforms files into smart task lists, with **automatic counting**, **dynamic highlighting**, and **full color customization**.
 
@@ -14,61 +15,17 @@ With it you can:
 ### Task Types
 
 <table>
-<tr>
-  <th>Tag</th>
-  <th>Name</th>
-  <th>Description</th>
-</tr>
-<tr>
-  <td><code>[x]</code></td>
-  <td>Done</td>
-  <td>completed task</td>
-</tr>
-<tr>
-  <td><code>[ ]</code></td>
-  <td>Pending</td>
-  <td>priority level 1 task</td>
-</tr>
-<tr>
-  <td><code>[+]</code></td>
-  <td>In Progress</td>
-  <td>task in progress</td>
-</tr>
-<tr>
-  <td><code>[!]</code></td>
-  <td>Priority</td>
-  <td>priority level 2 task</td>
-</tr>
-<tr>
-  <td><code>[>]</code></td>
-  <td>Max Priority</td>
-  <td>priority level 3 task</td>
-</tr>
-<tr>
-  <td><code>[@]</code></td>
-  <td>Delegated</td>
-  <td>task assigned to someone (NAME)</td>
-</tr>
-<tr>
-  <td><code>[?]</code></td>
-  <td>Doubt</td>
-  <td>question task (question)</td>
-</tr>
-<tr>
-  <td><code>[#]</code></td>
-  <td>Bug</td>
-  <td>bug task</td>
-</tr>
-<tr>
-  <td><code>[/]</code></td>
-  <td>Refactor</td>
-  <td>refactoring task</td>
-</tr>
-<tr>
-  <td><code>[*]</code></td>
-  <td>Broken</td>
-  <td>broken code task</td>
-</tr>
+<tr><th>Tag</th><th>Name</th><th>Description</th></tr>
+<tr><td><code>[x]</code></td><td>Done</td><td>completed task</td></tr>
+<tr><td><code>[ ]</code></td><td>Pending</td><td>priority level 1 task</td></tr>
+<tr><td><code>[+]</code></td><td>In Progress</td><td>task in progress</td></tr>
+<tr><td><code>[!]</code></td><td>Priority</td><td>priority level 2 task</td></tr>
+<tr><td><code>[>]</code></td><td>Max Priority</td><td>priority level 3 task</td></tr>
+<tr><td><code>[@]</code></td><td>Delegated</td><td>task assigned to someone (NAME)</td></tr>
+<tr><td><code>[?]</code></td><td>Doubt</td><td>question task (question)</td></tr>
+<tr><td><code>[#]</code></td><td>Bug</td><td>bug task</td></tr>
+<tr><td><code>[/]</code></td><td>Refactor</td><td>refactoring task</td></tr>
+<tr><td><code>[*]</code></td><td>Broken</td><td>broken code task</td></tr>
 </table>
 
 </div>
