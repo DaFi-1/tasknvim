@@ -84,6 +84,26 @@ With it you can:
 ```lua
 {"DaFi-1/tasknvim"}
 ```
+
+### Using [packer.nvim](https://github.com/wbthomason/packer.nvim)
+
+```lua
+use "DaFi-1/tasknvim"
+```
+
+### Using [vim-plug](https://github.com/junegunn/vim-plug)
+
+```vim
+Plug 'DaFi-1/tasknvim'
+```
+
+### Manual Installation
+
+Clone the repository to your Neovim package directory:
+
+```bash
+git clone https://github.com/DaFi-1/tasknvim.git ~/.local/share/nvim/site/pack/plugins/start/tasknvim
+```
 ---
 
 ## 📄 License
