@@ -1,48 +1,40 @@
-# 📝 tasknvim
+# tasknvim
 ![plugin logo](./res/logo.png)
 
 A simple and visual Neovim plugin that transforms files into smart task lists, with **automatic counting**, **dynamic highlighting**, and **full color customization**.
 
-  
-## 🚀 Introduction
-  
-**TASKNVIM** was created to simplify task management directly inside Neovim.<br>
-Create a file called **TASKNVIM** and add your tasks.
+## Introduction
 
-With it you can:
+**TASKNVIM** simplifies task management directly inside Neovim.<br>
+Create a file named **TASKNVIM** and organize your tasks with sections.
 
-* ✅ Create task lists organized by sections
-* 📊 Automatically track task counts:
-  * for the title use - followed by a space '- title'
-  * Completed `[x]`
-  * Pending `[ ]`
-  * In progress `[+]`
-* 🎨 Visualize everything with intuitive colors
-* ⚡ Automatic updates
+### Task Types
 
-![image0](./res/image.png)
-![image1](./res/image1.png)
+| Tag | Name | Description |
+|-----|------|-------------|
+| `[x]` | Done | Completed task |
+| `[ ]` | Pending | Task not started |
+| `[+]` | In Progress | Task currently being worked on |
+| `[!]` | Priority | Important task |
+| `[>]` | Max Priority | Critical/high priority task |
+| `[@]` | Delegated | Task assigned to someone else |
+| `[?]` | Doubt | Uncertain or blocked task |
+| `[#]` | Bug | Bug fix task |
+| `[/]` | Refactor | Code refactoring task |
+| `[*]` | Broken | Broken/needs fix task |
 
----
+### Features
 
-### ✨ Example
+* Create task lists organized by sections (use `- title`)
+* Automatic task counting with `[done/progress/pending/priority/max/delegated/doubt/bug/refactor/broken/total]`
+* Color-coded highlighting for badges and counters
+* Auto-updates on file read and save
 
-```txt
-- Lua Project
-  [x] Create structure
-  [+] Implement logic
-  [ ] Write README
-```
-
-⬇️ Automatically becomes:
-
-```txt
-- Lua Project [1/1/1/3]
-```
+![preview](./res/image.png)
+![preview](./res/image1.png)
 
 ---
-
-## 📦 Installation
+## Installation
 
 ### Using [lazy.nvim](https://github.com/folke/lazy.nvim)
 
@@ -52,43 +44,6 @@ With it you can:
 
 ---
 
-## ⚙️ Configuration & Usage
+## License
 
-The plugin uses a custom file type.  
-Use files named `TASKNVIM` to automatically enable it.
-
----
-
-### 🎨 Default Colors
-
-| Option     | Description                      | Default   |
-| ---------- | -------------------------------- | --------- |
-| `green`    | Completed tasks `[x]`           | `#00FF00` |
-| `red`      | Pending tasks `[ ]`             | `#FF0000` |
-| `blue`     | In-progress tasks `[+]`         | `#0000FF` |
-| `yellow`   | Total count                     | `#FFFF00` |
-| `title_fg` | Title text color                | `#000000` |
-| `title_bg` | Title background color          | `#808080` |
-
----
-
-### 🛠️ Customization
-
-```lua
-green    = "#00FF00",
-red      = "#FF0000",
-blue     = "#0000FF",
-yellow   = "#FFFF00",
-title_fg = "#000000",
-title_bg = "#808080",
-```
-
----
-
-✨ Simple, fast, and powerful — all inside your Neovim.
-
----
-## 📄 License
-
-
-This project is licensed under the MIT License.
+MIT License
