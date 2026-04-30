@@ -29,9 +29,6 @@ With it you can:
 </table>
 
 </div>
-
-![image0](./res/image.png)
-![image1](./res/image1.png)
 ---
 
 ## 📦 Installation
