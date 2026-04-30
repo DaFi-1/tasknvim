@@ -27,24 +27,6 @@ With it you can:
 
 ![image0](./res/image.png)
 ![image1](./res/image1.png)
-
----
-
-### ✨ Example
-
-```txt
-- Lua Project
-  [x] Create structure
-  [+] Implement logic
-  [ ] Write README
-```
-
-⬇️ Automatically becomes:
-
-```txt
-- Lua Project [1/1/1/0/0/0/0/0/0/0/3]
-```
-
 ---
 
 ## 📦 Installation
@@ -54,31 +36,6 @@ With it you can:
 ```lua
 {"DaFi-1/tasknvim"}
 ```
-
----
-
-## ⚙️ Configuration & Usage
-
-The plugin uses a custom file type.  
-Use files named `TASKNVIM` to automatically enable it.
-
----
-
-### 🎨 Default Colors
-
-| Tag      | Name      | Badge Color         | Counter Color     |
-|----------|-----------|---------------------|-------------------|
-| `[x]`    | Done      | Green `#00FF00`     | Green `#00FF00`   |
-| `[ ]`    | Pending   | Red `#FF0000`       | Red `#FF0000`     |
-| `[+]`    | In prog.  | Blue `#0000FF`      | Blue `#0000FF`    |
-| `[!]`    | Priority  | Magenta `#FF00FF`   | Magenta `#FF00FF` |
-| `[>]`    | Max Prior.| Orange `#FFA500`    | Orange `#FFA500`  |
-| `[@]`    | Delegated | Cyan `#00FFFF`      | Cyan `#00FFFF`    |
-| `[?]`    | Doubt     | Yellow `#FFFF00`    | Yellow `#FFFF00`  |
-| `[#]`    | Bug       | Red `#FF4444`       | Red `#FF4444`     |
-| `[/]`    | Refactor  | Purple `#E040FB`    | Purple `#E040FB`  |
-| `[*]`    | Broken    | DarkRed `#8B0000`   | DarkRed `#8B0000` |
-
 ---
 
 ## 📄 License
