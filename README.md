@@ -11,18 +11,18 @@ With it you can:
 
 ### Task Types
 
-| Tag | Name | Description |
-|-----|------|-------------|
-| `[x]` | Done | Completed task |
-| `[ ]` | Pending | Task not started |
-| `[+]` | In Progress | Task currently being worked on |
-| `[!]` | Priority | Important task |
-| `[>]` | Max Priority | Critical/high priority task |
-| `[@]` | Delegated | Task assigned to someone else |
-| `[?]` | Doubt | Uncertain or blocked task |
-| `[#]` | Bug | Bug fix task |
-| `[/]` | Refactor | Code refactoring task |
-| `[*]` | Broken | Broken/needs fix task |
+| Tag | Name | Description | Color |
+|-----|------|-------------|-------|
+| `[x]` | Done | completed task | <div style="width:20px;height:20px;background:#00FF00"></div> |
+| `[ ]` | Pending | priority level 1 task | <div style="width:20px;height:20px;background:#FF0000"></div> |
+| `[+]` | In Progress | task in progress | <div style="width:20px;height:20px;background:#0000FF"></div> |
+| `[!]` | Priority | priority level 2 task | <div style="width:20px;height:20px;background:#FF00FF"></div> |
+| `[>]` | Max Priority | priority level 3 task | <div style="width:20px;height:20px;background:#FFA500"></div> |
+| `[@]` | Delegated | task assigned to someone (NAME) | <div style="width:20px;height:20px;background:#00FFFF"></div> |
+| `[?]` | Doubt | question task (question) | <div style="width:20px;height:20px;background:#FFFF00"></div> |
+| `[#]` | Bug | bug task | <div style="width:20px;height:20px;background:#FF4444"></div> |
+| `[/]` | Refactor | refactoring task | <div style="width:20px;height:20px;background:#E040FB"></div> |
+| `[*]` | Broken | broken code task | <div style="width:20px;height:20px;background:#8B0000"></div> |
 
 ![image0](./res/image.png)
 ![image1](./res/image1.png)
