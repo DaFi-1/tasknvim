@@ -71,7 +71,7 @@ local function update_task_counts()
         vim.api.nvim_buf_add_highlight(buf, 0, "TodoMagenta", i-1, offsets[4][1], offsets[4][2])
         vim.api.nvim_buf_add_highlight(buf, 0, "TodoOrange",  i-1, offsets[5][1], offsets[5][2])
         vim.api.nvim_buf_add_highlight(buf, 0, "TodoDarkGreen", i-1, offsets[6][1], offsets[6][2])
-        vim.api.nvim_buf_add_highlight(buf, 0, "TodoPurple",  i-1, offsets[7][1], offsets[7][2])
+        vim.api.nvim_buf_add_highlight(buf, 0, "TodoCyan",    i-1, offsets[7][1], offsets[7][2])
         vim.api.nvim_buf_add_highlight(buf, 0, "TodoYellow",  i-1, offsets[8][1], offsets[8][2])
       end
     end
@@ -92,7 +92,7 @@ function M.setup()
   vim.cmd("highlight TodoMagenta   guifg=#FF00FF")
   vim.cmd("highlight TodoOrange    guifg=#FFA500")
   vim.cmd("highlight TodoDarkGreen guifg=#008000")
-  vim.cmd("highlight TodoPurple    guifg=#8000FF")
+  vim.cmd("highlight TodoCyan      guifg=#00FFFF")
 
   vim.api.nvim_create_autocmd("BufEnter", {
     pattern = "TASKNVIM",
@@ -114,7 +114,7 @@ function M.setup()
       vim.cmd("highlight TaskPriorityMax guifg=#000000 guibg=#FFA500")
       vim.cmd("highlight TaskPriority    guifg=#000000 guibg=#FF00FF")
       vim.cmd("highlight TaskCancelled   guifg=#000000 guibg=#008000")
-      vim.cmd("highlight TaskDelegated   guifg=#000000 guibg=#8000FF")
+      vim.cmd("highlight TaskDelegated   guifg=#000000 guibg=#00FFFF")
 
       vim.cmd("highlight TaskSubTitle  guifg=#000000 guibg=#808080 ctermfg=black")
       vim.cmd("highlight TaskMainTitle guifg=#000000 guibg=#808080 ctermfg=black")
