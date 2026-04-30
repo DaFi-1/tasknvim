@@ -9,20 +9,69 @@ Whether you're managing personal todos, team projects, bug tracking, or any orga
 
 With it you can:
 
+<div align="center">
+
 ### Task Types
 
-| Tag | Name | Description | Color |
-|-----|------|-------------|-------|
-| `[x]` | Done | completed task | <div style="width:20px;height:20px;background:#00FF00"></div> |
-| `[ ]` | Pending | priority level 1 task | <div style="width:20px;height:20px;background:#FF0000"></div> |
-| `[+]` | In Progress | task in progress | <div style="width:20px;height:20px;background:#0000FF"></div> |
-| `[!]` | Priority | priority level 2 task | <div style="width:20px;height:20px;background:#FF00FF"></div> |
-| `[>]` | Max Priority | priority level 3 task | <div style="width:20px;height:20px;background:#FFA500"></div> |
-| `[@]` | Delegated | task assigned to someone (NAME) | <div style="width:20px;height:20px;background:#00FFFF"></div> |
-| `[?]` | Doubt | question task (question) | <div style="width:20px;height:20px;background:#FFFF00"></div> |
-| `[#]` | Bug | bug task | <div style="width:20px;height:20px;background:#FF4444"></div> |
-| `[/]` | Refactor | refactoring task | <div style="width:20px;height:20px;background:#E040FB"></div> |
-| `[*]` | Broken | broken code task | <div style="width:20px;height:20px;background:#8B0000"></div> |
+<table>
+<tr>
+  <th>Tag</th>
+  <th>Name</th>
+  <th>Description</th>
+</tr>
+<tr>
+  <td><code>[x]</code></td>
+  <td>Done</td>
+  <td>completed task</td>
+</tr>
+<tr>
+  <td><code>[ ]</code></td>
+  <td>Pending</td>
+  <td>priority level 1 task</td>
+</tr>
+<tr>
+  <td><code>[+]</code></td>
+  <td>In Progress</td>
+  <td>task in progress</td>
+</tr>
+<tr>
+  <td><code>[!]</code></td>
+  <td>Priority</td>
+  <td>priority level 2 task</td>
+</tr>
+<tr>
+  <td><code>[>]</code></td>
+  <td>Max Priority</td>
+  <td>priority level 3 task</td>
+</tr>
+<tr>
+  <td><code>[@]</code></td>
+  <td>Delegated</td>
+  <td>task assigned to someone (NAME)</td>
+</tr>
+<tr>
+  <td><code>[?]</code></td>
+  <td>Doubt</td>
+  <td>question task (question)</td>
+</tr>
+<tr>
+  <td><code>[#]</code></td>
+  <td>Bug</td>
+  <td>bug task</td>
+</tr>
+<tr>
+  <td><code>[/]</code></td>
+  <td>Refactor</td>
+  <td>refactoring task</td>
+</tr>
+<tr>
+  <td><code>[*]</code></td>
+  <td>Broken</td>
+  <td>broken code task</td>
+</tr>
+</table>
+
+</div>
 
 ![image0](./res/image.png)
 ![image1](./res/image1.png)
