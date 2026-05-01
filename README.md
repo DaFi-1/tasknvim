@@ -61,4 +61,4 @@ git clone https://github.com/DaFi-1/tasknvim.git ~/.local/share/nvim/site/pack/p
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the GPL License.
