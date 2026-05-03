@@ -37,7 +37,7 @@ With it you can:
 ```lua
 {"DaFi-1/tasknvim"}
 ```
-
+ 
 ### Using [packer.nvim](https://github.com/wbthomason/packer.nvim)
 
 ```lua
