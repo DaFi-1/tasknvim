@@ -12,7 +12,7 @@ Whether you're managing personal todos, team projects, bug tracking, or any orga
 <br>
 
 ![tasknvim gif](./res/tasknvim.gif)
- 
+  
 </div>
 
 <div align="center">
