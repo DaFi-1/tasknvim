@@ -18,7 +18,7 @@ Whether you're managing personal todos, team projects, bug tracking, or any orga
 <div align="center">
 
 ### Task Types
-
+ 
 <table>
 <tr><th>Tag</th><th>Name</th><th>Description</th></tr>
 <tr><td><code>[x]</code></td><td>Done</td><td>completed task</td></tr>
