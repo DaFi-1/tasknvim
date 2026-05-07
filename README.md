@@ -7,7 +7,7 @@ A simple and visual Neovim plugin that transforms files into smart task lists, w
 
 **TASKNVIM** is a versatile task management plugin for Neovim, designed to organize tasks, todo-lists, project checklists, and any system requiring structured task tracking.<br>
 Whether you're managing personal todos, team projects, bug tracking, or any organizational workflow, create a file called **TASKNVIM** and start organizing.
-
+ 
 <div align="center" style="border:2px solid #FFFFFF;background-color: black; bor">
 <br>
 
