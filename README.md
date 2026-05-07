@@ -1,6 +1,6 @@
 ![plugin logo](./res/logo.png)
 ![tasknvim preview](./res/imagetasknvim.webp)
- 
+  
 A simple and visual Neovim plugin that transforms files into smart task lists, with **automatic counting**, **dynamic highlighting**, and **full color customization**.
 
 ## 🚀 Introduction
