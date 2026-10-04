@@ -272,6 +272,15 @@ local function update_task_counts(target_buf)
   local buf = (type(target_buf) == "number" and target_buf)
     or (type(target_buf) == "table" and type(target_buf.buf) == "number" and target_buf.buf)
     or vim.api.nvim_get_current_buf()
+
+  if not vim.api.nvim_buf_is_valid(buf) or not vim.api.nvim_buf_is_loaded(buf) then
+    return
+  end
+
+  if not vim.bo[buf].modifiable or vim.bo[buf].buftype ~= "" then
+    return
+  end
+
   local lines = vim.api.nvim_buf_get_lines(buf, 0, -1, false)
 
   -- Pula o bloco de dashboard existente para não reprocessá-lo como tarefas
@@ -492,7 +501,8 @@ local function update_task_counts(target_buf)
     local cur_buf = vim.api.nvim_win_is_valid(cur_win) and vim.api.nvim_win_get_buf(cur_win)
     local saved_cursor = (cur_buf == buf) and vim.api.nvim_win_get_cursor(cur_win) or nil
 
-    vim.api.nvim_buf_set_lines(buf, 0, -1, false, final_lines)
+    local ok = pcall(vim.api.nvim_buf_set_lines, buf, 0, -1, false, final_lines)
+    if not ok then return end
 
     if saved_cursor and vim.api.nvim_win_is_valid(cur_win) then
       local max_l = vim.api.nvim_buf_line_count(buf)
@@ -681,6 +691,7 @@ local function open_status_menu()
 
   vim.api.nvim_buf_set_lines(menu_buf, 0, -1, false, menu_lines)
   vim.bo[menu_buf].modifiable = false
+  vim.bo[menu_buf].buftype = "nofile"
   vim.bo[menu_buf].filetype = "task"
 
   -- Dimensões e posicionamento da janela flutuante
@@ -841,12 +852,14 @@ function M.setup(opts)
     if not (M.config and M.config.center) then return end
     for _, buf in ipairs(vim.api.nvim_list_bufs()) do
       if vim.api.nvim_buf_is_valid(buf) and vim.api.nvim_buf_is_loaded(buf) then
-        local name = vim.api.nvim_buf_get_name(buf)
-        if name:match("TASKNVIM$") or vim.bo[buf].filetype == "task" then
-          local was_mod = vim.bo[buf].modified
-          update_task_counts(buf)
-          if not was_mod and vim.api.nvim_buf_is_valid(buf) then
-            vim.bo[buf].modified = false
+        if vim.bo[buf].modifiable and vim.bo[buf].buftype == "" then
+          local name = vim.api.nvim_buf_get_name(buf)
+          if name:match("TASKNVIM$") or vim.bo[buf].filetype == "task" then
+            local was_mod = vim.bo[buf].modified
+            update_task_counts(buf)
+            if not was_mod and vim.api.nvim_buf_is_valid(buf) then
+              vim.bo[buf].modified = false
+            end
           end
         end
       end
